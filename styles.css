@@ -37,8 +37,12 @@ p {
 
 .wrapper {
   padding: 0 2rem;
+  margin: 0 auto;
 }
 
+.width {
+  max-width: 500px;
+}
 /* header */
 
 header {
@@ -148,6 +152,8 @@ header {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 16px;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .meetings__grid__img {
