@@ -60,7 +60,7 @@ header {
 }
 
 .header__hero {
-  width: 433px;
+  max-width: 433px;
   height: auto;
   margin: 0 auto 3rem auto;
   display: inline-block;
@@ -152,8 +152,8 @@ header {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 16px;
-  max-width: 400px;
   margin: 0 auto;
+  justify-items: center;
 }
 
 .meetings__grid__img {
@@ -245,4 +245,42 @@ header {
 .exp__heading,
 .exp__text {
   color: white;
+}
+
+@media (min-width: 768px) {
+  .exp {
+    background-image: linear-gradient(#4d97a9dd),
+      url("assets/tablet/image-footer.jpg");
+  }
+  .meetings__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    gap: 1rem;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1140px) {
+  .exp {
+    background-image: linear-gradient(#4d97a9dd),
+      url("assets/desktop/image-footer.jpg");
+  }
+
+  .meetings__grid {
+    display: flex;
+    max-width: 1120;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .meetings__grid__img {
+    object-fit: cover;
+    border-radius: 16px;
+    max-width: 256px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1240px) {
 }
