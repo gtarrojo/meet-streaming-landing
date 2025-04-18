@@ -313,12 +313,12 @@ header {
     margin: 0 auto;
     max-width: 1440px;
     margin-top: 9rem;
-    gap: 2rem;
   }
 
   .header__hero--left,
   .header__hero--right {
     display: block;
+    object-fit: cover;
   }
 
   .exp__container {
