@@ -255,6 +255,7 @@ header {
 .exp__btn--download:focus,
 .exp__btn--download:hover {
   transform: scale(0.98);
+  cursor: pointer;
 }
 
 .exp__btn--download span {
