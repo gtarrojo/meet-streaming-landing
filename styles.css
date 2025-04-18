@@ -317,8 +317,7 @@ header {
 
   .header__hero--left,
   .header__hero--right {
-    display: block;
-    object-fit: cover;
+    display: inline-block;
   }
 
   .exp__container {
@@ -328,7 +327,8 @@ header {
     justify-content: center;
     gap: 200px;
     padding: 6rem;
-
+    max-width: 1640px;
+    margin: 0 auto;
     .exp__btn--download,
     .exp__heading,
     .exp__text {
@@ -344,10 +344,7 @@ header {
 
     .exp__btn--download {
       margin-left: 2rem;
+      justify-self: start;
     }
-  }
-
-  .width {
-    max-width: 100vw;
   }
 }
