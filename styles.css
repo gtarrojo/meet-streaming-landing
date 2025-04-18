@@ -317,7 +317,7 @@ header {
 
   .header__hero--left,
   .header__hero--right {
-    display: inline-block;
+    display: block;
   }
 
   .exp__container {
